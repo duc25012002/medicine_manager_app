@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionBarColor">#4cc9f0</color>
+    <color name="statusBarColor">#cbf3f0</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#e01e37</color>
+    <color name="blue">#4361ee</color>
+    <color name="green">#16db65</color>
+    <color name="yellow">#ffea00</color>
+    <color name="grey">#ecf8f8</color>
+    <color name="brown">#a98467</color>
+    <color name="purple">#9d4edd</color>
+    <color name="orange">#ff9100</color>
+
+    <color name="mBackground">#cbdfbd</color>
+    <color name="mBackground1">#f6f4d2</color>
+    <color name="mBackground2">#d4e09b</color>
+    <color name="mBackground3">#0fa3b1</color>
+    <color name="mBackground4">#b5e2fa</color>
+    <color name="mBackground5">#f9f7f3</color>
+    <color name="mBackground6">#eddea4</color>
+    <color name="mBackground7">#f7a072</color>
+    <color name="mBackground8">#be95c4</color>
+    <color name="mBackground9">#f2b5d4</color>
+    <color name="mBackground10">#adc178</color>
+    <color name="mBackground11">#ff7f51</color>
+    <color name="mBackground12">#affc41</color>
+    <color name="mBackground13">#9bf6ff</color>
+    <color name="mBackground14">#fed9b7</color>
+    <color name="mBackground15">#f07167</color>
+    <color name="mBackground16">#98f5e1</color>
+    <color name="mBackground17">#f1c0e8</color>
+    <color name="mBackground18">#fbf8cc</color>
+    <color name="mBackground19">#00f5d4</color>
+    <color name="mBackground20">#cae9ff</color>
+    <color name="mBackground21">#f7e1d7</color>
+    <color name="mBackground22">#f8edeb</color>
+</resources>

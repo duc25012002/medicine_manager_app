@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="medicine"
+            type="com.hdcompany.plpsa888.model.Medicine" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_item_medicine_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/define_dimen_12"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/define_dimen_16"
+        app:cardCornerRadius="@dimen/define_dimen_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_label_medicine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/label_medicine_name"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_label_medicine_measurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Định lượng"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tv_label_medicine_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_medicine_quantity" />
+
+
+            <TextView
+                android:id="@+id/tv_label_medicine_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Số lượng"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tv_label_medicine_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_medicine_name" />
+
+            <TextView
+                android:id="@+id/tv_medicine_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{medicine.medicineName}"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/tv_btn_detail"
+                app:layout_constraintStart_toEndOf="@id/tv_label_medicine_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_medicine_measurement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{medicine.measurementName}"
+                app:layout_constraintEnd_toStartOf="@+id/tv_btn_detail"
+                app:layout_constraintStart_toEndOf="@+id/tv_label_medicine_measurement"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicine_quantity" />
+
+
+            <TextView
+                android:id="@+id/tv_medicine_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{medicine.medicineQuantity}"
+                app:layout_constraintEnd_toStartOf="@+id/tv_btn_detail"
+                app:layout_constraintStart_toEndOf="@+id/tv_label_medicine_quantity"
+                app:layout_constraintTop_toBottomOf="@+id/tv_medicine_name" />
+
+            <TextView
+                android:id="@+id/tv_btn_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_tv_azure_1"
+                android:contentDescription="@string/todo"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/label_detail"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
